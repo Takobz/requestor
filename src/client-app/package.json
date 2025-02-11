@@ -1,0 +1,12 @@
+{
+    "version": "1.0",
+    "description": "client-app for requestor poc",
+    "dependencies": {
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0"
+    },
+    "devDependencies": {
+        "@types/react": "^19.0.8",
+        "@types/react-dom": "^19.0.3"
+    }
+}

@@ -1,0 +1,9 @@
+FROM postgres:latest
+
+#The env variable are clear text because this is a POC.
+ENV POSTGRES_DB=requestor_database
+ENV POSTGRES_PASSWORD=requestor_pass
+ENV POSTGRES_USER=requestor_user 
+
+# docker build -f Dockerfile.dev -t requestor/requestor-db .
+COPY ./init-script/init-script.sql /docker-entrypoint-initdb.d/
